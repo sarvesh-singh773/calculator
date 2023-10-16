@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    
+    <style>
+        *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background: url(02.jpg) no-repeat;
+            background-size: 100%;
+            border: 5px solid blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading h1{
+            padding-bottom: 20px;
+            font-size: 50px;
+            color: white;
+        }
+        .container{
+            width: 330px;
+            height: 470px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: rgb(59, 53, 53);
+        }
+        .screen{
+            width: 90%;
+            height: 50px;
+            background-color: rgb(162, 171, 106);
+            margin-top:40px;
+            margin-left: 20px;
+            color: black;
+            font-size: larger;
+        }
+        .box{
+            width: 90%;
+            height: auto;
+            margin-left: 20px;
+            margin-top: 30px;
+
+            display: flex;
+            justify-content: space-between;
+        }
+        .button{
+            width: 60px;
+            height: 40px;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: larger;
+        }
+        .oper{
+            background-color: rgb(168, 40, 40);
+            color: white;
+        }
+        .spical{
+            background-color: rgb(146, 135, 135);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1>Calculator</h1>
+        </div>
+        <div class="container">
+            <input type="text" class="screen">
+
+            <div class="box">
+                <button class="button spical">C</button>
+                <button class="button spical">m+</button>
+                <button class="button spical">m-</button>
+                <button class="button oper">/</button>
+            </div>
+
+            <div class="box">
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>
+                <button class="button oper">*</button>
+            </div>
+
+            <div class="box">
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button oper">-</button>
+            </div>
+
+            <div class="box">
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button oper">+</button>
+            </div>
+
+            <div class="box">
+                <button class="button">0</button>
+                <button class="button">.</button>
+                <button class="button">=</button>
+                <button class="button oper">%</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
